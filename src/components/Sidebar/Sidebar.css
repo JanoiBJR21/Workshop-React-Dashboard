@@ -45,8 +45,8 @@
         width: 50px;
         height: 30px;
         border-radius: 4px;
-        background: gray;
-        color: #fff;
+        background: #eee;
+        color: #000;
         position: absolute;
         z-index: 2;
         margin: 10px 5px;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Chart.css";
 import ReactApexChart from "react-apexcharts";
+import { motion } from "framer-motion";
 
 const ActivityChart = () => {
   const data = [
@@ -51,7 +52,12 @@ const ActivityChart = () => {
   ];
 
   return (
-    <div className="chart">
+    <motion.div
+      className="chart activity-chart"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+    >
       <h3 className="chart-title">Activities</h3>
       <ReactApexChart
         options={options}
@@ -59,7 +65,7 @@ const ActivityChart = () => {
         type="area"
         height={350}
       />
-    </div>
+    </motion.div>
   );
 };
 

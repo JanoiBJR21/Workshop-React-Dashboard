@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
 import "./Card.css";
@@ -17,7 +17,13 @@ const Card = ({ data }) => {
   const displayDollarSign =
     title === "Total Sales" || title === "Total Expenses";
   return (
-    <div className="card" style={{ backgroundColor }}>
+    <motion.div
+      className="card"
+      style={{ backgroundColor }}
+      initial={{ opacity: 0, scale: 0.7 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 2 }}
+    >
       <div className="card--header">
         <div className="card--icon" style={{ color: backgroundColor }}>
           {icon}
@@ -35,10 +41,10 @@ const Card = ({ data }) => {
         </h2>
         <div className="growth">
           <p>Total Sales</p>
-          <span>+12%</span>
+          <span>{growth}</span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

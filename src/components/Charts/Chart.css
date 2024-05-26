@@ -1,0 +1,20 @@
+.chart {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.chart-title {
+    margin-bottom: 1rem;
+}
+.activity-chart {
+    flex: 2;
+}
+.sales-chart {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .chart {
+        width: 100%;
+    }
+}

@@ -59,6 +59,10 @@ button {
 
 @media (max-width: 500px) {
     .header-title {
-        margin-left: 4rem;
+        display: none;
+    }
+    .user-box {
+        width: 100%;
+        justify-content: flex-end;
     }
 }
