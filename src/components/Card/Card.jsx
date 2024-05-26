@@ -40,7 +40,7 @@ const Card = ({ data }) => {
           />
         </h2>
         <div className="growth">
-          <p>Total Sales</p>
+          <p>{title}</p>
           <span>{growth}</span>
         </div>
       </div>
