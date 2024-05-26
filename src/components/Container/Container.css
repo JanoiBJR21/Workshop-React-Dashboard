@@ -2,3 +2,20 @@
     flex: 1;
     overflow: auto;
 }
+.content {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .chart-container {
+        flex-direction: column;
+    }
+}
